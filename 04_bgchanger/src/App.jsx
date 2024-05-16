@@ -3,6 +3,7 @@ import { useState } from "react"
 
 function App() {
   const [color,setColor]=useState("maroon");//maroon will be the default
+  //user state function is use to re render whole thing on each change or any event
 
   return (
     <>
