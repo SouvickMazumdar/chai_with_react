@@ -18,6 +18,7 @@ function App() {
   const toggleComplete=(id)=>{
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id?{...prevTodo,completed:!prevTodo.completed}:prevTodo))
   }
+  //Use Effect call will be automatically rendered as soon as page is reloaded or if their is any change in dependencies
   useEffect(()=>{
     const todos=JSON.parse(localStorage.getItem("todos"))
     if(todos && todos.length)
